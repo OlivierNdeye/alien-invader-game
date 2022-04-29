@@ -20,7 +20,7 @@ body {
 .player-shooter {
 	position: relative;
 	height: 60px;
-	width: 70px;
+	width: 100px;
 	left: 20px;
 	top: 250px;
 }
