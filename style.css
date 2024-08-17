@@ -17,6 +17,13 @@ body {
 	width: 600px;
 }
 
+.game-instructions {
+	position: relative;
+    color: white;
+    left: 7rem;
+    top: 0px;
+}
+
 .player-shooter {
 	position: relative;
 	height: 60px;
@@ -25,8 +32,39 @@ body {
 	top: 250px;
 }
 
+.start-button {
+    position: relative;
+    color: white;
+    top: 9rem;
+    left: 15rem;
+    cursor: pointer;
+}
+
 .laser {
 	position: relative;
 	width: 40px;
 	height: 9px;
+}
+
+
+.dead-enemy {
+	height: 60px;
+    width: 70px;
+    position: relative;
+    opacity: 0;	
+}
+
+.enemy-transition {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(37, 93, 247);
+    color: white;
+    text-align: center;
 }
