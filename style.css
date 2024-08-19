@@ -2,12 +2,20 @@ body {
 	height: 100vh;
 	width: 100vw;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
-	background-color: cornflowerblue;
+	background-color: black;
+}
+
+body h1 {
+	font-size: 94px;
+	font-weight: 900;
+	color: antiquewhite;
+	text-align: center;
 }
 
 #main-play-area {
@@ -15,35 +23,61 @@ body {
 	background-image: url(img/space.png);
 	height: 600px;
 	width: 600px;
+	margin-bottom: 100px;
 }
 
 .game-instructions {
-	position: relative;
     color: white;
     left: 7rem;
     top: 0px;
 }
 
-.player-shooter {
-	position: relative;
-	height: 60px;
-	width: 100px;
-	left: 20px;
-	top: 250px;
+.instruction {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+
 }
 
 .start-button {
-    position: relative;
-    color: white;
-    top: 9rem;
-    left: 15rem;
-    cursor: pointer;
+	background: rgb(255, 212, 22);
+	width: 100px;
+	height: 100px;
+	border: 5px solid rgb(92, 90, 90);
+	border-radius: 600px;
+	font-weight: 900;
+	font-size: 1.0em;
+	color: rgb(95, 59, 196);
+	top: 9rem;
+	left: 15rem;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.start-button:hover {
+	background: rgb(219, 207, 30);
+
+}
+
+.player-shooter {
+	position: relative;
+	height: 80px;
+	width: 100px;
+	left: 20px;
+	top: 250px;
 }
 
 .laser {
 	position: relative;
 	width: 40px;
 	height: 9px;
+}
+
+.enemy {
+	height: 60px;
+	width: 70px;
+	position: relative;
 }
 
 
@@ -56,7 +90,7 @@ body {
 
 .enemy-transition {
     opacity: 1;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 2.5s ease-in-out;
 }
 
 .footer {
@@ -64,7 +98,14 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(37, 93, 247);
+    background-color: rgb(8, 34, 107);
     color: white;
     text-align: center;
+}
+
+span {
+	color: rgb(241, 194, 37);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 900;
 }
